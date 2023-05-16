@@ -31,7 +31,7 @@ public class HappyBirthdayApp {
         return NUM_USERS;
     }
 
-    public String getGreeting(User u) {
+    public String getFormattedGreeting(User u) {
         final String WISHES_PRE = "Today is ";
         var greeting = """
                 Today is\s""" +
@@ -53,7 +53,7 @@ public class HappyBirthdayApp {
             if (u == null)
                 break;
             //s += u + "\n";
-            s += getGreeting(u);
+            s += getFormattedGreeting(u);
         }
         return s;
     }
